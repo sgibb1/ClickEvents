@@ -16,7 +16,7 @@ barBtn.addEventListener("click", function () {
 })
 
 foobarBtn.addEventListener("click", function () {
-  let text = document.createElement("h3");
+  let text = document.createElement("h2");
   text.textContent = "FooBar";
   main.appendChild(text);
 })
