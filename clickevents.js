@@ -1,11 +1,22 @@
-const button = document.querySelector("button");
-const body = document.querySelector("body");
-button.addEventListener('click', responseToClick)
+const fooBtn = document.getElementById("foo");
+const barBtn = document.getElementById("bar");
+const foobarBtn = document.getElementById("foobar");
+const main = document.querySelector("main");
 
-function responseToClick() {
-    const pTag = document.createElement('h3');
-    pTag.textContent = "Foo";
-    body.appendChild(pTag);
-}
+fooBtn.addEventListener("click", function () {
+  let text = document.createElement("h3");
+  text.textContent = "Foo";
+  main.appendChild(text);
+})
 
-               
+barBtn.addEventListener("click", function () {
+  let text = document.createElement("h3");
+  text.textContent = "Bar";
+  main.appendChild(text);
+})
+
+foobarBtn.addEventListener("click", function () {
+  let text = document.createElement("h3");
+  text.textContent = "FooBar";
+  main.appendChild(text);
+})
